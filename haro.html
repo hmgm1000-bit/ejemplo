@@ -1,0 +1,105 @@
+<html> 
+<head>
+  <title>Boletín de Calificaciones</title>
+  <style>
+    table {
+      width: 90%;
+      border-collapse: collapse;
+      margin: 20px auto;
+    }
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+      text-align: center;
+    }
+    caption {
+      display: none; /* ocultamos caption vacío */
+    }
+    th {
+      background-color: #d0e4f5;
+    }
+    .resumen {
+      background-color: #f0f0f0;
+    }
+    h3.titulo {
+      color: #3366cc;               
+      text-align: center;           
+      text-decoration: underline;
+      text-decoration-color: #3366cc;  
+      margin-top: 20px;
+      margin-bottom: 20px;
+      font-weight: normal;
+    }
+    .subrayado-verde {
+      color: green;
+      text-decoration: underline;
+      text-decoration-color: green;
+      font-weight: bold;
+    }
+    .subrayado {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<h3 class="titulo">Boletín de Calificaciones</h3>
+
+<p>
+  <b><u class="subrayado">Estudiantes evaluados:</u></b> <i>Juan Pérez y María Torres</i><br>
+  <b><u class="subrayado">Asignaturas:</u></b> Matemática y Lengua <br>
+  <b><span class="subrayado-verde">Nota:</span></b> Las calificaciones están expresadas sobre 10 puntos.
+</p>
+
+<p style="color: red; font-weight: bold; margin-top: 0;">
+  Este informe forma parte de la evaluación académica del segundo periodo lectivo.
+</p>
+
+<table>
+  <caption></caption> <!-- Caption oculto -->
+  <thead>
+    <tr>
+      <th rowspan="2">Estudiante</th>
+      <th colspan="2">Prom. 1er Quimestre</th>
+      <th colspan="2">Segundo Quimestre</th>
+    </tr>
+    <tr>
+      <th>Matemática</th>
+      <th>Lengua</th>
+      <th>Matemática</th>
+      <th>Lengua</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Juan</td>
+      <td>8.5</td>
+      <td>9.0</td>
+      <td>8.8</td>
+      <td>9.2</td>
+    </tr>
+    <tr>
+      <td>Maria</td>
+      <td>9.1</td>
+      <td>8.6</td>
+      <td>9.5</td>
+      <td>9.0</td>
+    </tr>
+    <tr class="resumen">
+      <td rowspan="2"><strong>Resumen</strong></td>
+      <td colspan="2"><strong>Prom. 1 Quimestre</strong></td>
+      <td colspan="2"><strong>Prom. 2 Quimestre</strong></td>
+    </tr>
+    <tr class="resumen">
+      <td colspan="2">8.8</td>
+      <td colspan="2">9.1</td>
+    </tr>
+  </tbody>
+</table>
+
+<center>
+ <p><i><font color="gray">Este reporte fue generado en HTML con estilos CSS.</font></i></p>
+</center>
+
+</body>
+</html>
